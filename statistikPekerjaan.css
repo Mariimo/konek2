@@ -62,6 +62,17 @@ body {
   height: auto;
 }
 
+/*
+#menu .logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  padding: 30px 0 0 30px;
+}
+
+*/
+
 #menu .logo img {
   width: 115px;
   margin-top: 15px;
@@ -95,7 +106,7 @@ body {
   position: relative;
 }
 
-#menu .items li:nth-child(1) {
+#menu .items li:nth-child(3) {
   border-left: 4px solid rgb(0, 0, 0);
 }
 
@@ -295,27 +306,68 @@ body {
   margin-left: auto;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 60px;
-  margin-bottom: 2px;
+  margin-top: 70px;
 }
 
 .values {
   width: 94%;
-  padding: 30px 30px 0 30px;
+  /* padding: 30px 30px 0 30px; */
   padding: 30px 0 0 0;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   gap: 40px;
-  justify-content: space-between; 
+  /* justify-content: space-between; */
   align-items: center;
   flex-wrap: wrap;
 }
 
+.values .val-box {
+  background: #fff;
+  /* width: 235px; */
+  width: 1300px;
+  height: 300px;
+  margin:auto;
+  /* width: auto; */
+  padding: 16px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 
+.values .val-box i {
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 150px;
+  line-height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  /* background: chartreuse; */
+  margin-left: 120px;
+}
+
+.values .val-box img {
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 120px;
+  line-height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  /* background: chartreuse; */
+  margin-left: 44%;
+}
 
 .values .val-box:nth-child(1) i {
   background: #7b74ec;
+  text-align: center;
+  margin-top: 50px;
+  width: 150px;
+  height: 90px;
 }
 .values .val-box:nth-child(2) i {
   background: #5c8af0;
@@ -327,16 +379,29 @@ body {
   background: #74daec;
 }
 
+.values .val-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  /* margin-left: -400px; */
+  margin-left: -120px;
+  margin-bottom: 30px;
+}
+
+.values .val-box span {
+  font-size: 15px;
+  color: #828997;
+}
 
 .board {
-  width: 94%;
-  height: 80%;
+  width: 1100px;
+  height: 300px;
   /* margin: 30px 0 30px 30px; */
   margin: 30px 0 700px 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   overflow: auto;
   background-color: #fff;
   border-radius: 8px;
@@ -344,77 +409,11 @@ body {
   transition: 0.3s ease;
 }
 
-
-.board2 {
-  width: 1070px;
-  height: 235px;
-  /* margin: 30px 0 30px 30px; */
-  margin: 30px 0 700px 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 3px;
-  overflow: auto;
-  background-color: #d7dbe6;
-  border-radius: 8px;
-  padding: 0 10px;
-  transition: 0.3s ease;
-}
-
-.board2 .alert {
-  padding: 10px;
-  background-color: #f44336;
-  color: white;
-  font-size: 12px;
-}
-
-.board2 .alert2 {
-  padding: 10px;
-  background-color: #0032bb;
-  color: white;
-  font-size: 12px;
-}
-
-.board2 .alert3 {
-  padding: 10px;
-  background-color: #03be00;
-  color: white;
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-.board2 .closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.board2 .closebtn:hover {
-  color: black;
-}
-
-.board2 .tag-cloud {
-  display: inline-block;
-  color: white;
-  padding: 8px 20px;
-  font-family: Arial;
-  border-radius: 25px;
-  background-color: #5C8984;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-}
-
 .board .val-box1 {
-  background: #5C8984;
-  width: 225px;
-  height: 100px;
-  margin-top: 20px;
+  background: #51A0EA;
+  width: 310px;
+  height: 250px;
+  margin-top: 40px;
   margin-bottom: 5px;
   margin-left: 40px;
   padding: 16px 20px;
@@ -425,12 +424,12 @@ body {
 }
 
 .board .val-box2 {
-  background: #5C8984;
-  width: 225px;
-  height: 100px;
+  background: #EFDB23;
+  width: 310px;
+  height: 250px;
   margin-top: 7px;
   margin-bottom: 5px;
-  margin-left: 120px;
+  margin-left: 136px;
   padding: 16px 20px;
   border-radius: 25px;
   display: flex;
@@ -439,26 +438,12 @@ body {
 }
 
 .board .val-box3 {
-  background: #5C8984;
-  width: 225px;
-  height: 100px;
+  background: #4AB748;
+  width: 310px;
+  height: 250px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 90px;
-  padding: 16px 20px;
-  border-radius: 25px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.board .val-box4 {
-  background: #5C8984;
-  width: 225px;
-  height: 100px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 90px;
+  margin-left: 130px;
   padding: 16px 20px;
   border-radius: 25px;
   display: flex;
@@ -472,128 +457,215 @@ body {
   height: 0px;
   margin-top: 10px;
   margin-bottom: 20px;
-  margin-left: 30px;
+  margin-right: 2000px;
   border-radius: 25px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
+
 .board .val-box1 i {
   font-size: 25px;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   line-height: 60px;
   border-radius: 50%;
   text-align: center;
   color: rgb(0, 0, 0);
-  margin-left: 10px;
-  margin-top: -7px;
+  margin-left: 95px;
+  margin-top: -40px;
 }
 
 .board .val-box2 i {
   font-size: 25px;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   line-height: 60px;
   border-radius: 50%;
   text-align: center;
   color: rgb(0, 0, 0);
-  margin-right: 15px;
-  margin-left: 10px;
-  margin-top: -7px;
+  margin-left: 93px;
+  margin-top: -40px;
 }
 
 .board .val-box3 i {
   font-size: 25px;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   line-height: 60px;
   border-radius: 50%;
   text-align: center;
   color: rgb(0, 0, 0);
-  margin-left: 10px;
-  margin-top: -7px;
+  margin-left: 100px;
+  margin-top: -40px;
 }
 
-.board .val-box4 i {
-  font-size: 25px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  margin-left: 10px;
-  margin-top: -7px;
-}
 
 .board .val-box1 h3 {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
-  margin-left: 20px;
-  text-align: left;
+  margin-left: -110px;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .board .val-box2 h3 {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
-  margin-left: 20px;
-  text-align: left;
+  margin-left: -110px;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .board .val-box3 h3 {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
-  margin-left: 20px;
-  text-align: left;
+  margin-left: -84px;
+  margin-top: 100px;
+  text-align: center;
 }
 
-.board .val-box4 h3 {
-  font-size: 12px;
+.board2 {
+  width: 1100px;
+  height: 300px;
+  /* margin: 30px 0 30px 30px; */
+  margin: 30px 0 700px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  margin-bottom: 50px;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 10px;
+  transition: 0.3s ease;
+}
+
+.board2 .val-box1 {
+  background: #D937C9;
+  width: 310px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  padding: 16px 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.board2 .val-box2 {
+  background: #A22222;
+  width: 310px;
+  height: 250px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  margin-left: 145px;
+  padding: 16px 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.board2 .val-box3 {
+  background: #D24C00;
+  width: 310px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 118px;
+  padding: 16px 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.board2 .val-box5 {
+  background: rgb(255, 255, 255);
+  width: 0px;
+  height: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 3000px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.board2 .val-box1 i {
+  font-size: 25px;
+  width: 100px;
+  height: 100px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-left: 85px;
+  margin-top: -40px;
+}
+
+.board2 .val-box2 i {
+  font-size: 25px;
+  width: 100px;
+  height: 100px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-left: 85px;
+  margin-top: -40px;
+}
+
+.board2 .val-box3 i {
+  font-size: 25px;
+  width: 100px;
+  height: 100px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-left: 93px;
+  margin-top: -40px;
+}
+
+
+.board2 .val-box1 h3 {
+  font-size: 20px;
   font-weight: 600;
-  margin-left: 20px;
-  text-align: left;
+  margin-left: -110px;
+  margin-top: 100px;
+  text-align: center;
 }
 
-.board .val-box1 p {
-  font-size: 10px;
-  color: #000000;
-  margin-left: 20px;
-  text-align: left;
+.board2 .val-box2 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -120px;
+  margin-top: 100px;
+  text-align: center;
 }
 
-.board .val-box2 p {
-  font-size: 15px;
-  color: #000000;
+.board2 .val-box3 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -93px;
+  margin-top: 100px;
+  text-align: center;
 }
 
-.board .val-box3 p {
-  font-size: 15px;
-  color: #000000;
-}
 
-.board .val-box4 p {
-  font-size: 15px;
-  color: #000000;
-} 
-
-
-.board #p-order1 {
+.board #p-order {
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 8PX;
-  margin-left: 5px;
+  margin: 15px 10px;
   font-weight: 600;
-  color: #596e81;
-}
-
-.board #p-order2 {
-  font-size: 16px;
-  margin-top: 2PX;
-  margin-left: 5px;
-  font-weight: 600;
-  color: #596e81;
+  color: #1e88e5;
 }
 
 .board #show {
@@ -618,7 +690,6 @@ body {
   width: 150px;
   height: 3000px;
   border: 1px solid #ccc;
-  margin-top: 5PX;
   /* margin-left: 200px;
   margin-right: 400px; */
   display: flex;
@@ -660,8 +731,9 @@ body {
   font-size: 14px; 
   padding: 8px; 
   font-size: 14px; 
-
 }
+
+
 
 .board thead td {
   font-size: 14px;
